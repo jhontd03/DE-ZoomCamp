@@ -42,3 +42,5 @@ terraform.rc
 
 **/ny_taxi_postgres_data
 **/.ipynb_checkpoints/
+
+**/mage_data
