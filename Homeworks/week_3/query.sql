@@ -3,9 +3,7 @@
 CREATE OR REPLACE EXTERNAL TABLE `ny_taxi.external_green_tripdata`
 OPTIONS (
 format = 'PARQUET',
-  uris = ['gs://taxi_green_2022/trip-data/green_tripdata_2022-*.parquet'],
- max_staleness = INTERVAL 6 HOUR,
- metadata_cache_mode = 'AUTOMATIC'
+  uris = ['gs://taxi_green_2022/trip-data/green_tripdata_2022-*.parquet']
 );
 
 -- Create internal or materialized table
